@@ -1,0 +1,35 @@
+.colomns{
+    border: 2px solid red;
+}
+.navbar{
+    position:fixed;
+  background-color:#1c2237;
+    width: 100%;
+    color: white;
+    
+}
+.menu-bar{
+    margin-left: 50px;
+    size: 50;
+}
+.icon{
+    width: 40px;
+    
+    height: 40px;
+}
+.virusIcon{
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    
+   
+}
+h1{
+    align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .virusIcon {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }

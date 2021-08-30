@@ -1,0 +1,57 @@
+.navbar{
+    display: flex;
+    flex-direction:start;
+    
+    height: 80px;
+    z-index: 2;
+    
+    
+   
+    
+  
+    }
+.nav-menu{
+    background-color:  #41464e;
+    color: white;
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    width: 15vw;
+    height: 200vh;
+    position:fixed;
+    transition: 850ms;
+    left: -100%;
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+    max-height: calc(125vh - 15rem);
+    overflow-y: auto;
+    box-shadow: 5px 10px 8px #888888;
+    
+    
+    
+}
+
+li{
+    list-style-type: none;
+    
+    
+}
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+    
+}
+.nav-menu.active:hover{
+    background-color: #1c2237;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

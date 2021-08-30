@@ -1,0 +1,136 @@
+.stat-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 15vw;
+    transition: 350ms;
+
+}
+.stat-container.no{
+    margin-left:0%;
+    transition: 350ms;
+    
+
+}
+.count-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 40vh;
+    
+    flex-wrap: wrap;
+    background: url("pic.jpg") no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    align-items: center;
+
+}
+.count-container::before{
+    
+    
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.8);
+
+}
+.count-container .box{
+    width: 15vw;
+    border: 1px dashed rgb(255,255,255,0.6);
+    padding: 20px;
+    margin: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+
+}
+.count-container .box .icon{
+    font-size: 15px;
+    color: #e6e6e6;
+
+}
+
+.count-container .box .counter{
+    font-size: 20px;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+@media(max-width: 1036px) {
+    .count-container{
+        padding: 50px 50px 0px 50px;
+    }
+    .count-container .box{
+        width: calc(50%-30px);
+        margin-bottom: 50px;
+
+    }
+    
+}
+@media(max-width: 380px) {
+    .count-container .box{
+        width:100%;
+        margin-bottom: 50px;
+
+    }
+
+    
+
+
+}
+.bar-charts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.box:hover{
+    padding: 25px;
+    transition: 500ms;
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 2px solid gold;
+    
+}
+@media screen and (max-width: 768px) {
+    .bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.iconn{
+    height: 25px;
+   
+    width: 25px;
+}
+.text{
+    font: weight 500px;;
+}
+h3{
+    font-weight: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif    ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.chart{
+   
+    
+}
+
+@media(max-width:1023px)
+{
+ h3,.text {
+    font-size: 1vw;
+ }
+}
+.sticker{
+    height: 500px;
+    width: 500px;
+}
