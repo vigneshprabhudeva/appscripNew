@@ -49,7 +49,8 @@ export default function Stats({sidebar}) {
   useEffect(()=>{
    var config = {
     method: 'get',
-    url: 'https://api.covid19india.org/v4/min/data.min.json',  
+    url: 'https://cors-anywhere.herokuapp.com/https://api.covid19india.org/v4/min/data.min.json ', 
+     
   };
   axios(config)
   .then(function (response) {
@@ -60,6 +61,24 @@ export default function Stats({sidebar}) {
   .catch(function (error) {
     console.log(error);
   });
+
+
+//   axios.post('https://api.covid19india.org/v4/min/data.min.json', {
+//     headers: { 
+//       'Access-Control-Allow-Origin': '*'
+//     }})      
+// .then((response) => {
+//   setcovidData(response.data)
+//     console.log(response.data)
+//     dispatch({type:"save",covidData:response.data})
+    
+// })
+// .catch((error) => {
+//   console.log(error); s
+// })
+
+
+
     setstate(Object.keys(checkboxStore).length)
 
     for(let i in covidDataStore){
